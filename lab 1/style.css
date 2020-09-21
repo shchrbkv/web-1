@@ -3,3 +3,7 @@ body{
 	position:relative;
 	margin: 0px auto;
 }
+
+#radio{
+	display:inline;
+}

@@ -15,29 +15,7 @@ h1{
 #books{
 	display: flex;
 }
-.book{
-	margin-left: 2rem;
-}
-.book:first-of-type{
-	margin-left: 0;
-}
-.book:hover>.cover{
-	box-shadow: 0px 0px 5rem -20px rgba(0,0,0,0.3);
-	border: 1rem solid white;
-	cursor: pointer;
-}
-a{
-	text-decoration: none;
-	color: #1d1507;
-	border-bottom: 0.15rem solid;
-	border-color: white;
-}
 
-h3{
-	font-weight: 700;
-	font-size: 1.4rem;
-	margin-top: 0.7rem;
-}
 .cover{
 	width: 16rem;
 	height: 24rem;

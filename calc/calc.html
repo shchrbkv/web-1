@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" spellcheck="false">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div id="history"><p class="previous">press ↲ to save</p></div>
+    <input id="input" type="text" placeholder="start typing">
+    <div id="output">&nbsp;</div>
+    <table id="toolset">
+        <tr>
+            <td class="func">xⁿ</td>
+            <td class="func">√</td>
+            <td class="func">ln</td>
+            <td class="func">log₁₀</td>
+        </tr>
+        <tr>
+            <td class="func">sin</td>
+            <td class="func">cos</td>
+            <td class="func">tan</td>
+        </tr>
+        <tr>
+            <td class="func">eⁿ</td>
+            <td class="func">π</td>
+            <td class="func">!</td>
+        </tr>
+    </table>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.5.1/math.js"></script>
+<script src="calc.js"></script>
+</html>

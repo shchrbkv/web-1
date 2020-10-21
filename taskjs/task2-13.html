@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.13</title>
+</head>
+<body>
+    <p onmouseout="changeColor(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat quam, auctor elementum leo porta sed. Suspendisse dictum, eros sit amet ullamcorper egestas, elit dui iaculis risus, vel lobortis leo risus id lacus. Morbi mauris eros, scelerisque eu purus sit amet, blandit commodo erat. Aliquam vitae quam eget arcu tempor porta. Nullam pretium diam non tortor accumsan tincidunt. Aliquam tincidunt tristique mauris vitae consectetur. Morbi nec faucibus purus. Vivamus aliquet turpis mauris.</p>
+</body>
+<script>
+    let changeColor = (el) => {
+        el.style.color="#"+Math.floor(Math.random()*16777215).toString(16);
+    }
+</script>
+</html>
+

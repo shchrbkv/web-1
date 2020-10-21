@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.12</title>
+</head>
+<body>
+    <h1>Рассчёт параметров окна</h1>
+    <form name="window">
+        <h2>Введите параметры и нажмите кнопку "Рассчитать"</h2>
+        <label>
+            Верхнее основание (см): <input name="top">
+        </label><br>
+        <label>
+            Нижнее основание (см): <input name="bottom">
+        </label><br>
+        <label>
+            Высота (см): <input name="height">
+        </label><br>
+        <input type="button" value="Рассчитать" onclick="calc()">
+    </form>
+    <script>
+        let form = document.forms.window;
+        let calc = () => {
+            let area = (parseInt(form.top.value) + parseInt(form.bottom.value)) / 2 * parseInt(form.height.value);
+            alert("Полученная площадь окна: " + area +"см\u00B2");
+        }
+    </script>
+</body>
+</html>
+

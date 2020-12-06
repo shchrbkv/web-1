@@ -1,0 +1,207 @@
+html{
+    width: 100%;
+    color: #1d1d1f;
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: "lnum";
+}
+body {
+    margin: 0;
+}
+header{
+    width: 100%;
+    font-size: 1.2rem;
+    position: fixed;
+}
+#header-wrapper{
+    width: 50%;
+    max-width: 100rem;
+    height: 4rem;
+    margin: 1rem auto;
+    border-radius: 5rem;
+    background: #ffffff;
+    box-shadow:  0 0.2rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    color: #3f3f41;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color .2s;
+    cursor:pointer;
+}
+header a:hover{
+    color: #1ebd9d;
+}
+header b{
+    font-weight: 800;
+    color: #1ebd9d;
+}
+.logo{
+    padding: 0.25rem 0 0 0.5rem;
+    height: 1.6rem;
+}
+.section{
+    box-sizing: border-box;
+    width: 100rem;
+    height: 60vh;
+    max-height: 70rem;
+    margin: 0 auto;
+    min-height: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.section>img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+.section:first-of-type{
+    height: 70vh;
+}
+.text{
+    min-width: 30rem;
+    max-width: 60rem;
+    width: 40%;
+    padding: 0 4rem 2rem 5rem;
+}
+h1{
+    font-weight: 800;
+    font-size: 2rem;
+}
+h1>b{
+    font-weight: inherit;
+    color: #1ebd9d;
+}
+h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+h3>b{
+    font-weight: 800;
+}
+.link{
+    font-size: 1.4rem;
+    color: #1EBD9D;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color .2s;
+}
+.link:hover{
+    color: #3f3f41;
+}
+.button{
+    all: unset;
+    background: #1EBD9D;
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    padding: 1rem 1.5rem;
+    transition: box-shadow .1s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 2rem -0.5rem #1EBD9D;
+}
+.text-middle{
+    padding: 5rem;
+    width: 100%;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-size: 1.4rem;
+    flex-wrap: wrap
+}
+.card{
+    max-width: 18rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-shadow:  0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-top: solid 2rem #1EBD9D;
+    padding: 2rem;
+    min-height: 25rem;
+}
+.card-faq{
+    width: 40%;
+    height: 15rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background: #ffffff;
+    box-shadow:  0 0.5rem 1rem rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+.card-contact{
+    padding: 1rem 4rem 2rem 4rem;
+    background: #ffffff;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1);
+    border: solid 2rem #1EBD9D;
+    min-height: 25rem;
+    width: 40rem;
+    text-align: center;
+}
+
+form{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form>.button{
+    margin: 2rem 0 2rem 0;
+}
+input[type=text],
+input[type=tel]{
+    all: unset;
+    width: 30%;
+    border-radius: 0.5rem;
+    flex: 1;
+    margin: 0.5rem;
+    height: 2rem;
+    background: #f2f2f2;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+label{
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+textarea{
+    all: unset;
+    flex: 2 100%;
+    border-radius: 0.5rem;
+    background: #f2f2f2;
+    padding: 1rem;
+    margin: 0.5rem;
+    resize: none;
+    height: 10rem;
+    font-size: 1.4rem;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #b5b5b5;
+}
+input[type=checkbox]{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}

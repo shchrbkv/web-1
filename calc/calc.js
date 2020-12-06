@@ -34,9 +34,10 @@ input.addEventListener("blur", () => {
     toolset.classList.remove("visible");
 });
 
-let res = false,
+let res = false, fade,
     update = (e) =>{
         if (input.value.length !== 0) {
+            clearTimeout(fade);
             try {
                 let expression = math.evaluate(input.value);
                 if (typeof expression == "number")
@@ -51,7 +52,7 @@ let res = false,
         }
         else {
             output.innerText = "\xa0";
-            setTimeout(() => input.blur(), 3000);
+            fade = setTimeout(() => input.blur(), 3000);
         }
     };
 
@@ -90,8 +91,7 @@ let insert = (e) => {
         selS = input.selectionStart,
         selE = input.selectionEnd;
     console.log(func);
-    line = line.slice(0, selS)+func.split("(")[0]+
-        "("+ line.slice(selS, selE)+")"+line.slice(selE);
+    line = line.slice(0, selS)+func+line.slice(selE);
     console.log(line);
     input.value = line;
     input.focus();
